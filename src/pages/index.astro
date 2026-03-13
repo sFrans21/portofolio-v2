@@ -49,32 +49,6 @@ const skillGroups = [
   },
 ];
 
-const highlights = [
-  {
-    metric: "50k+",
-    label: "Downloads across Python and C projects.",
-  },
-  {
-    metric: "100k+",
-    label: "Visitors across live deployments.",
-  },
-  {
-    metric: "10+",
-    label: "Listed repos for minimalist design.",
-  },
-  {
-    metric: "Top 80",
-    label: "GambitoR 4.0 at IIT Roorkee out of 100k+ participants.",
-  },
-  {
-    metric: "Shastra 2026",
-    label: "Qualified both rounds at IIT Madras. DSA, coding, maths, and reasoning against school and college students.",
-  },
-  {
-    metric: "3rd Global",
-    label: "Won Lumi Hackathon. Placed 3rd globally and received $200 in cash prizes.",
-  },
-];
 
 const building = [
   {
@@ -104,36 +78,14 @@ const building = [
         <SectionHeader title="about" number="01" />
         <div class="about-content">
           <p>
-            I write software that ships. My work spans developer tooling,
-            game engine internals, and web infrastructure. I build in Go,
-            TypeScript, Python, and Lua, and I contribute to open source
-            projects that people actually use.
+            I'm Samuel, currently a final-year Information Systems student at Bandung Institute of Technology. I'm interested in AI-driven applications, data engineering, and dev tools. I also enjoy building systems and looking at other systems codebases to learn something new, or adding some changes that hopefully could improve it.
           </p>
-          <p>
-            When I solve a problem, I publish the solution. When existing tools
-            fall short, I build better ones. That approach has led to 50k+
-            downloads, recognition across international hackathons, and a
-            portfolio of tools used by developers worldwide.
-          </p>
+
         </div>
       </div>
     </section>
 
-    <section id="highlights" class="section fade-in">
-      <div class="container">
-        <SectionHeader title="highlights" number="02" />
-        <div class="highlights-grid">
-          {
-            highlights.map((h, i) => (
-              <div class="highlight-card slide-up" style={`animation-delay: ${i * 0.1}s`}>
-                <span class="highlight-metric">{h.metric}</span>
-                <span class="highlight-label">{h.label}</span>
-              </div>
-            ))
-          }
-        </div>
-      </div>
-    </section>
+    
 
     <section id="projects" class="section fade-in">
       <div class="container">
@@ -328,17 +280,7 @@ const building = [
     max-width: 36rem;
   }
 
-  /* Highlights */
-  .highlights-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
-    margin-top: 1.5rem;
-    border: 1px solid var(--border-color);
-    border-radius: var(--rounded-corner);
-    overflow: hidden;
-    background: var(--border-color);
-  }
+
 
   .highlight-card {
     display: flex;

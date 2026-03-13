@@ -1,8 +1,8 @@
 ---
-title: "Needlelight"
-description: "Rewrite of the Lumafly mod assistant. Faster startup, reduced memory footprint, and native cross platform tooling built with C# and Python."
-tech: ["c#", "python"]
-github: "https://github.com/Aarav2709/Needlelight"
+title: "AnorgaLink"
+description: "A digital marketplace to connect waste collectors and citizens. Designed to incentivize proper waste management through an accessible digital platform."
+tech: ["React", "Vite", "Firebase", "Cloudinary"]
+github: "https://github.com/sFrans21/AnorgaLink"
 featured: true
 order: 1
 ---
