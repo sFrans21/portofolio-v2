@@ -2,18 +2,6 @@
 
 Modern, performant portfolio built with Astro, featuring zero JavaScript by default and optimal performance.
 
-## About
-
-This repository contains a customized version of **AarusPortfolio**, an Astro-based developer portfolio template.
-
-The original project was created by **Aarav Gupta** and is distributed under the MIT License.
-This version may include modifications and personal adaptations.
-
-Original repository:
-https://github.com/Aarav2709/AarusPortfolio
-
----
-
 ## Features
 
 - Static Site Generation: Lightning-fast load times
@@ -25,10 +13,6 @@ https://github.com/Aarav2709/AarusPortfolio
 - Accessibility: WCAG compliant
 - SEO Optimized: Structured data and meta tags
 
----
-
----
-
 ## Performance
 
 - Lighthouse Score: 100/100/100/100
@@ -36,20 +20,12 @@ https://github.com/Aarav2709/AarusPortfolio
 - First Contentful Paint: <1.2s
 - Time to Interactive: <2.5s
 
----
-
----
-
 ## Tech Stack
 
 - Framework: Astro
 - Language: TypeScript
 - Styling: CSS with custom properties
 - Deployment: Vercel/Netlify ready
-
----
-
----
 
 ## Getting Started
 
@@ -59,8 +35,6 @@ npm run dev
 npm run build
 npm run preview
 ```
-
----
 
 ## Project Structure
 
@@ -77,8 +51,6 @@ public/             Static assets
 astro.config.mjs    Astro configuration
 ```
 
----
-
 ## Key Improvements from v2.0
 
 - 90% JavaScript Reduction: From 195KB to <50KB
@@ -87,10 +59,6 @@ astro.config.mjs    Astro configuration
 - Component Architecture: Modular and maintainable
 - TypeScript: Type-safe content and props
 - Optimized Fonts: Preloaded and subsetted
-
----
-
----
 
 ## Adding New Projects
 
@@ -107,48 +75,31 @@ order: 1
 ---
 ```
 
----
-
 ## Customization
 
 - Colors: Edit `src/styles/variables.css`
 - Typography: Modify font in `src/styles/fonts.css`
 - Animations: Update `src/styles/animations.css`
 
----
-
----
-
 ## Commands
 
 | Command              | Action                                           |
-| -------------------- | ------------------------------------------------ |
+| :------------------- | :----------------------------------------------- |
 | `npm install`        | Installs dependencies                            |
 | `npm run dev`        | Starts local dev server at `localhost:4321`      |
 | `npm run build`      | Build your production site to `./dist/`          |
-| `npm run preview`    | Preview your build locally                       |
+| `npm run preview`    | Preview your build locally, before deploying     |
 | `npm run astro ...`  | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro help` | Get help using the Astro CLI                     |
-
----
-
-## Attribution
-
-Original project by **Aarav Gupta**
-
-GitHub: https://github.com/Aarav2709
-
-This project is based on the open-source repository:
-https://github.com/Aarav2709/AarusPortfolio
-
----
 
 ## License
 
 MIT License
 
-Copyright (c) 2026 Aarav Gupta
+## Author
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files to deal in the Software without restriction.
+Aarav Gupta
 
-See the LICENSE file for full details.
+- GitHub: @Aarav2709
+- LinkedIn: aarav2709
+- Email: tribejustice35@gmail.com
