@@ -2,9 +2,6 @@
 
 Modern, performant portfolio built with Astro, featuring zero JavaScript by default and optimal performance.
 
-<p align="center">
-  <img src="image.png" alt="AarusPortfolio Banner" />
-</p>
 
 ## About
 
