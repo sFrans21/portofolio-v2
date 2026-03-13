@@ -16,7 +16,11 @@ type EmailPayload = {
   message: string;
 };
 
-function showNotification(notification: HTMLElement | null, message: string, type: NotificationType) {
+function showNotification(
+  notification: HTMLElement | null,
+  message: string,
+  type: NotificationType,
+) {
   if (!notification) return;
 
   notification.textContent = message;
@@ -41,9 +45,10 @@ function setSubmitting(form: HTMLFormElement, isSubmitting: boolean) {
 
 async function sendEmail(
   payload: EmailPayload,
-  config: ContactFormConfig
+  config: ContactFormConfig,
 ): Promise<void> {
-  const { serviceId, publicKey, ownerTemplateId, userTemplateId, toEmail } = config;
+  const { serviceId, publicKey, ownerTemplateId, userTemplateId, toEmail } =
+    config;
   if (!serviceId || !publicKey) {
     throw new Error("Email service is not configured yet.");
   }
@@ -72,7 +77,7 @@ async function sendEmail(
             user_email: payload.email,
           },
         }),
-      })
+      }),
     );
   }
 
@@ -85,14 +90,14 @@ async function sendEmail(
           ...basePayload,
           template_id: userTemplateId,
           template_params: {
-            from_name: "Aarav",
+            from_name: "Jamal",
             reply_to: toEmail,
             message: payload.message,
             email: payload.email,
             to_email: payload.email,
           },
         }),
-      })
+      }),
     );
   }
 
@@ -111,7 +116,7 @@ async function sendEmail(
 export function initContactForm(
   form: HTMLFormElement | null,
   notification: HTMLElement | null,
-  config: ContactFormConfig
+  config: ContactFormConfig,
 ) {
   if (!form) return;
 
@@ -122,7 +127,7 @@ export function initContactForm(
       showNotification(
         notification,
         "Email service is not configured yet. Please add PUBLIC_EMAILJS_SERVICE_ID and PUBLIC_EMAILJS_PUBLIC_KEY.",
-        "error"
+        "error",
       );
       return;
     }
@@ -135,21 +140,29 @@ export function initContactForm(
     const message = (formData.get("message")?.toString() || "").trim();
 
     if (!name || !email || !message) {
-      showNotification(notification, "Please fill in all fields before sending.", "error");
+      showNotification(
+        notification,
+        "Please fill in all fields before sending.",
+        "error",
+      );
       setSubmitting(form, false);
       return;
     }
 
     try {
       await sendEmail({ name, email, message }, config);
-      showNotification(notification, "Message sent successfully! I'll get back to you soon.", "success");
+      showNotification(
+        notification,
+        "Message sent successfully! I'll get back to you soon.",
+        "success",
+      );
       form.reset();
     } catch (error) {
       console.error("Email send failed", error);
       showNotification(
         notification,
         "Could not send your message. Please try again or email me directly.",
-        "error"
+        "error",
       );
     } finally {
       setSubmitting(form, false);
