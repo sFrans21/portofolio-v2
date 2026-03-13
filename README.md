@@ -27,6 +27,8 @@ https://github.com/Aarav2709/AarusPortfolio
 
 ---
 
+---
+
 ## Performance
 
 - Lighthouse Score: 100/100/100/100
@@ -36,12 +38,16 @@ https://github.com/Aarav2709/AarusPortfolio
 
 ---
 
+---
+
 ## Tech Stack
 
 - Framework: Astro
 - Language: TypeScript
 - Styling: CSS with custom properties
 - Deployment: Vercel/Netlify ready
+
+---
 
 ---
 
@@ -84,6 +90,8 @@ astro.config.mjs    Astro configuration
 
 ---
 
+---
+
 ## Adding New Projects
 
 Create a new `.md` file in `src/content/projects/`:
@@ -106,6 +114,8 @@ order: 1
 - Colors: Edit `src/styles/variables.css`
 - Typography: Modify font in `src/styles/fonts.css`
 - Animations: Update `src/styles/animations.css`
+
+---
 
 ---
 
