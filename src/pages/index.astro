@@ -49,32 +49,6 @@ const skillGroups = [
   },
 ];
 
-const highlights = [
-  {
-    metric: "50k+",
-    label: "Downloads across Python and C projects.",
-  },
-  {
-    metric: "100k+",
-    label: "Visitors across live deployments.",
-  },
-  {
-    metric: "10+",
-    label: "Listed repos for minimalist design.",
-  },
-  {
-    metric: "Top 80",
-    label: "GambitoR 4.0 at IIT Roorkee out of 100k+ participants.",
-  },
-  {
-    metric: "Shastra 2026",
-    label: "Qualified both rounds at IIT Madras. DSA, coding, maths, and reasoning against school and college students.",
-  },
-  {
-    metric: "3rd Global",
-    label: "Won Lumi Hackathon. Placed 3rd globally and received $200 in cash prizes.",
-  },
-];
 
 const building = [
   {
@@ -111,21 +85,7 @@ const building = [
       </div>
     </section>
 
-    <section id="highlights" class="section fade-in">
-      <div class="container">
-        <SectionHeader title="highlights" number="02" />
-        <div class="highlights-grid">
-          {
-            highlights.map((h, i) => (
-              <div class="highlight-card slide-up" style={`animation-delay: ${i * 0.1}s`}>
-                <span class="highlight-metric">{h.metric}</span>
-                <span class="highlight-label">{h.label}</span>
-              </div>
-            ))
-          }
-        </div>
-      </div>
-    </section>
+    
 
     <section id="projects" class="section fade-in">
       <div class="container">
@@ -320,17 +280,7 @@ const building = [
     max-width: 36rem;
   }
 
-  /* Highlights */
-  .highlights-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
-    margin-top: 1.5rem;
-    border: 1px solid var(--border-color);
-    border-radius: var(--rounded-corner);
-    overflow: hidden;
-    background: var(--border-color);
-  }
+
 
   .highlight-card {
     display: flex;
