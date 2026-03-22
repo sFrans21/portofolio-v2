@@ -1,7 +1,7 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection, z } from "astro:content";
 
 const projectsCollection = defineCollection({
-  type: 'content',
+  type: "content",
   schema: z.object({
     title: z.string(),
     description: z.string(),
@@ -11,6 +11,18 @@ const projectsCollection = defineCollection({
     stars: z.number().optional(),
     featured: z.boolean().default(false),
     order: z.number().default(999),
+  }),
+});
+
+const experiencesCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    company: z.string(),
+    start: z.string(),
+    end: z.string(),
+    order: z.number(),
+    points: z.array(z.string()),
   }),
 });
 
